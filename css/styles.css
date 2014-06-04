@@ -1,0 +1,247 @@
+﻿/* Common styles */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.f-left {
+    float: left;
+}
+
+/* /Common styles */
+
+
+/* Main styles */
+.wrap {
+    width: 470px;
+    height: 315px;
+    margin: auto;
+    padding-top: 1px;
+}
+
+    .wrap.left-tab-active {
+        background: url(../img/bg2.jpg) no-repeat center;
+    }
+
+    .wrap.right-tab-active {
+        background: url(../img/bg1.jpg) no-repeat center;
+    }
+
+    .tabs {
+        height: 46px;
+        list-style-type: none;
+        padding: 0;
+        margin: 14px 0 0;
+    }
+
+        .tabs > li {
+            width: 227px;
+            height: 46px;
+            float: left;
+            text-indent: 72px;
+            line-height: 43px;
+            cursor: pointer;
+        }
+
+        .tabs > li.active {
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.88);
+        }
+
+
+    .main-area {
+        height: 184px;
+        width: 460px;
+        margin: 5px auto 0;
+        overflow: hidden;
+    }
+
+        .messages-list {
+            width: 210px;
+            margin: 23px 0 0 25px;
+            padding: 0;
+            list-style-type: none;
+        }
+
+            .messages-list li {
+                overflow: hidden;
+                position: relative;
+                padding: 0 0 7px;
+                margin: 0 0 12px;
+            }
+
+            .messages-list li:after {
+                content: '';
+                width: 160px;
+                height: 2px;
+                background: url(../img/bottom-divider.jpg) repeat-x;
+                position: absolute;
+                bottom: 0;
+                left: 10px;
+            }
+
+                .messages-list li .avatar-container {
+                    width: 50px;
+                }
+
+                    .messages-list li .avatar-container img {
+                        max-width: 50px;
+                    }
+
+                .messages-list li .text-block {
+                    width: 135px;
+                    padding: 3px 0 0;
+                    margin: 0 0 0 16px;
+                    position: relative;
+                }
+
+                .messages-list li .text-block:after {
+                    content: '';
+                    width: 2px;
+                    height: 100%;
+                    background: url(../img/right-divider.jpg) repeat-y;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                .messages-list li h3 {
+                    color: #005068;
+                    margin: 0 0 5px;
+                    padding: 0;
+                    font-weight: normal;
+                }
+
+                .messages-list li p {
+                    color: #444545;
+                    margin: 0;
+                    line-height: 12px;
+                    padding: 0 0 13px;
+                    font-size: 14px;
+                }
+
+        .right-list {
+            margin: 23px 0 0 10px;
+            width: 189px;
+        }
+
+            .right-list li .text-block {
+                width: 123px;
+            }
+
+            .right-list li .text-block:after {
+                display: none;
+            }
+
+    .chose-lang {
+        width: 400px;
+        height: 40px;
+        margin: 10px 0 0 28px;
+    }
+
+/* /Main styles */
+
+/* Castom scrollbar */
+
+.scrollable.modern-skin {
+    padding: 0 0 2px;
+}
+
+.scrollable.modern-skin .scroll-bar.vertical {
+    width: 13px;
+    z-index: 100;
+    background: #767676;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc2NzY3NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5ZTllOWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #767676 0%, #9e9e9e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#767676), color-stop(100%,#9e9e9e));
+    background: -webkit-linear-gradient(top,  #767676 0%,#9e9e9e 100%);
+    background: -o-linear-gradient(top,  #767676 0%,#9e9e9e 100%);
+    background: -ms-linear-gradient(top,  #767676 0%,#9e9e9e 100%);
+    background: linear-gradient(to bottom,  #767676 0%,#9e9e9e 100%);
+    margin-right: 7px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -moz-box-shadow: inset 0px 0px 1px #000;
+    -webkit-box-shadow: inset 0px 0px 1px #000;
+    box-shadow: inset 0px 0px 1px #000;
+}
+
+.scrollable.modern-skin .scroll-bar.vertical .thumb {
+    width: 9px;
+    margin: 3px 0 0 2px;
+    background: #4d4f50;
+    border: none;
+    height: 47px!important;
+}
+
+/* /Castom scrollbar */
+
+
+/* Custom select */
+
+.select2-search {
+    display: none;
+}
+
+.select2-container {
+    width: 210px;
+}
+
+.select2-container .select2-choice {
+    color: #aaa;
+    height: 32px;
+    line-height: 31px;
+}
+
+.select2-container .select2-choice, .select2-drop-active, .select2-drop.select2-drop-above {
+   border-radius: 0; 
+}
+
+.select2-drop {
+    color: #aaa;
+}
+
+.select2-results .select2-highlighted {
+    background: #aaa;
+}
+
+.select2-dropdown-open .select2-choice {
+    background: #fff;
+}
+
+.select2-container .select2-choice .select2-arrow {
+    width: 29px;
+    background: #fefefe url(../img/select-arrow.jpg) no-repeat center;
+}
+
+.select2-drop-active {
+    border: 1px solid #aaa;
+}
+
+/* /Custom select */
+
+/* Custom checkboxes */
+
+.icheckbox_minimal.hover {
+    background-position: 0 -24px;
+}
+
+.icheckbox_minimal.checked {
+    background-position: 0 0; 
+}
+
+.icheckbox_minimal {
+    width: 24px;
+    height: 24px;
+    background: url(../img/checkbox-sprite.png) no-repeat;
+    background-position: 0 -24px;
+    margin: 0 0 0 55px;
+}
+
+
+/* /Custom checkboxes */
